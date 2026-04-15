@@ -5,8 +5,8 @@
 string robot_name
 string fleet_name
 
-# Time the request was issued.
-builtin_interfaces/Time request_stamp
+# Unique ID for this request.
+string request_id
 
 # Name of the zone the robot wants to enter or exit.
 string zone_name

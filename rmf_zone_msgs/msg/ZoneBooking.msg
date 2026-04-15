@@ -18,3 +18,6 @@ string assigned_waypoint_name
 bool has_orientation
 float64 orientation
 
+# Echoes the request_id of the original ZoneRequest.
+string request_id
+

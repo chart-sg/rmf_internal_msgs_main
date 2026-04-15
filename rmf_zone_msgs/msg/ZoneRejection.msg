@@ -5,8 +5,8 @@
 string robot_name
 string fleet_name
 
-# Echoes the request_stamp of the original ZoneRequest.
-builtin_interfaces/Time request_stamp
+# Echoes the request_id of the original ZoneRequest.
+string request_id
 
 # Name of the zone the rejected request was targeting.
 string zone_name
