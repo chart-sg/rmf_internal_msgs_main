@@ -1,0 +1,11 @@
+# Name of the robot to be added
+string robot_name
+
+# JSON object with the robot's configuration
+# Supported keys:
+#   compatible_chargers      List (string) name of the robot's charger waypoint
+# e.g. {"compatible_chargers": ["tinyRobot_charger"]}
+string robot_config
+---
+bool success
+string message
