@@ -1,6 +1,6 @@
-# Sent by the zone supervisor when an existing ZoneBooking is being taken
+# Sent by the zone manager when an existing ZoneBooking is being taken
 # back from a robot before the robot has voluntarily released it (e.g.
-# because of a ZoneManualRelease, a supervisor restart, or an internal
+# because of a ZoneManualRelease, a manager restart, or an internal
 # consistency error).
 
 # Time the revocation was issued.

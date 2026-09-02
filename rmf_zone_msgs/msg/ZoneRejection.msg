@@ -1,4 +1,4 @@
-# Sent by the zone supervisor when a ZoneRequest cannot be granted.
+# Sent by the zone manager when a ZoneRequest cannot be granted.
 # Carried inside ZoneState alongside the current set of bookings.
 
 # Identity of the robot whose request was rejected.
