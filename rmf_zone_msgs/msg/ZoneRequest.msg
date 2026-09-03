@@ -13,14 +13,18 @@ string request_id
 # The zone this request is about.
 string zone_name
 
-# request_type:
-# ENTRY    = claim a waypoint inside the zone.
-# EXIT     = give up the booking held in the zone.
-# HANDBACK = let go of `released_waypoint`'s ticket without releasing it, so
-#            the manager may take the vertex back.
-uint8 ENTRY=0
-uint8 EXIT=1
-uint8 HANDBACK=2
+# request_type. The first four are the order a booking goes through:
+# PREBOOKING = claim a waypoint in the zone, before the robot sets off.
+# ENTRY      = at the zone entrance, confirm or improve the booked vertex.
+# ARRIVED    = the robot has arrived at its booked waypoint.
+# EXIT       = the robot has left the zone and released its booking.
+# HANDBACK   = hand `released_waypoint`'s ticket back without releasing it.
+#
+uint8 PREBOOKING=0
+uint8 ENTRY=1
+uint8 ARRIVED=2
+uint8 EXIT=3
+uint8 HANDBACK=4
 uint8 request_type
 
 # Optional hints carried from the task description (group preferences,
