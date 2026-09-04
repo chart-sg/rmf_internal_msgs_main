@@ -33,3 +33,6 @@ ZoneModifiers modifiers
 
 # The vertex being handed back, for request_type HANDBACK. Empty otherwise.
 string released_waypoint
+
+# The context on why this robot is here.
+ZoneEntryContext entry_context

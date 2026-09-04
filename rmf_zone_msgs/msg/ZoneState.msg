@@ -15,3 +15,7 @@ ZoneBooking[] bookings
 # Refusals that go with this publish, filled in only on the publish that
 # refuses a request.
 ZoneRejection[] rejected
+
+# Go-aheads that name no waypoint, filled in only on the publish that answers
+# such a request. Nothing is booked or reserved by one of these.
+ZoneProceed[] proceed

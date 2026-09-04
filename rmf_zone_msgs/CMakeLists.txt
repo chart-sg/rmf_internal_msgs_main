@@ -20,6 +20,8 @@ set(msg_files
   "msg/ZoneRequest.msg"
   "msg/ZoneBooking.msg"
   "msg/ZoneRejection.msg"
+  "msg/ZoneProceed.msg"
+  "msg/ZoneEntryContext.msg"
   "msg/ZoneBookingRevoked.msg"
   "msg/ZoneManualRelease.msg"
   "msg/ZoneState.msg"
