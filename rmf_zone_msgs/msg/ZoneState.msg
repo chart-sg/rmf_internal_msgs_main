@@ -12,10 +12,7 @@ builtin_interfaces/Time stamp
 # All bookings currently held by robots, across all zones.
 ZoneBooking[] bookings
 
-# Refusals that go with this publish, filled in only on the publish that
-# refuses a request.
-ZoneRejection[] rejected
-
-# Go-aheads that name no waypoint, filled in only on the publish that answers
-# such a request. Nothing is booked or reserved by one of these.
-ZoneProceed[] proceed
+# Answers that go with this publish: refusals, go-aheads that name no
+# waypoint, and revocations. Filled in only on the publish that carries
+# them, since each answers one request once.
+ZoneResponse[] responses
