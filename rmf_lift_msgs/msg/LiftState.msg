@@ -32,3 +32,8 @@ uint8 MODE_EMERGENCY=5
 # this field records the session_id that has been granted control of the lift
 # until it sends a request with a request_type of REQUEST_END_SESSION
 string session_id
+
+# Seconds left before the lift closes its doors on its own. Holds at most
+# one value. Empty means the lift is in AGV mode, where the doors are held
+# open while the cabin is stopped, so there is no countdown.
+int32[<=1] door_open_time
