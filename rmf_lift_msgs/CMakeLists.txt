@@ -20,6 +20,7 @@ set(msg_files
   "msg/LiftState.msg"
   "msg/LiftRequest.msg"
   "msg/LiftSelectRequest.msg"
+  "msg/LiftSelectState.msg"
 )
 
 rosidl_generate_interfaces(${PROJECT_NAME}
